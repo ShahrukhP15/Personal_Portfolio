@@ -114,6 +114,10 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
+.about-col-2 h1 span{
+    color: #ff004f;
+}
+
 .title{
     font-size: 50px;
     font-weight: 450;
@@ -168,3 +172,66 @@ nav ul li a:hover::after{
     width: 100%;
     left: 0; 
 }
+
+.tab-titles{
+    display: flex; ; 
+    margin: 20px 0px 40px; 
+}
+
+.tab-links{
+    margin-right: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: -15px;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.8s;
+    border-radius: 4px;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-links.active-link:hover::after{
+    width: 100%;
+}
+
+.tab-contents .list-items li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tab-contents ul li span{
+    color: #B52B5E;
+    font-size: 14px;
+}
+
+h4 {
+    margin-bottom: -20px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
+

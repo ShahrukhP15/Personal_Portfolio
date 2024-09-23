@@ -44,36 +44,136 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class= "title">About <span>Me</span></h1>
-                    <p>Hey, I am Shahrukh Islam Prithibi, a fourth year <span>Statisitcs</span> and <span>Data Science</span> student at the University of British Columbia. 
+                    <p>Hey, I am Shahrukh Islam Prithibi, a fourth year Statisitcs and Data Science student at the University of British Columbia. 
                         I have an insatiable curiosity for uncovering the exciting hidden stories in data to solve the mysteries around us. 
-                    I have recently wokred as a <span>Payment Review and Compliance Analyst</span> at WorkSafeBC. 
-                    Outside academics and work I like to travel, play games and watch FRIENDS or The Office. 
-                    And I hope to see a Coldplay concert someday.
-                <br>
-                <br>
-                <h4 class="title-2">Feel Free to Reach Out!</h4>
-                <p class="sub_info">If you would like to get in touch, connect with me on social media or send me an email.</p>
+                    I have recently wokred as a Payment Review and Compliance Analyst at WorkSafeBC. 
+                    In my spare time I like to travel, play games and watch FRIENDS or The Office. 
+                     </p>
+                    <!-- <br>
+                    <br>
+                    <h4 class="title-2">Feel Free to Reach Out!</h4>
+                    <p class="sub_info">If you would like to get in touch, connect with me on social media or send me an email.</p>
 
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/shahrukh-islam-prithibi-597833291/" target="_blank">
-                        <i class="ri-linkedin-box-fill"></i>
-                    </a>
-                    <a href="mailto:s.prithibi15@gmail.com">
-                        <i class="ri-mail-fill"></i>
-                    </a>
-                    <a href="https://github.com/ShahrukhP15?tab=repositories" target="_blank">
-                        <i class="ri-github-fill"></i>
-                    </a>
-                </div>
-            </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shahrukh-islam-prithibi-597833291/" target="_blank">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="mailto:s.prithibi15@gmail.com">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                        <a href="https://github.com/ShahrukhP15?tab=repositories" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div> -->
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Education</p>
+                        <p class="tab-links" onclick="opentab('eca')">Extracurricular Activities</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class = "list-items">
+                            <li><span>Programming Languages</span>
+                                <br>
+                                <p>C++, Java, Python, Racket, PHP, R, LaTeX, HTML/CSS</p>
+                            </li>
+
+                            <li><span>Data Science And Analytics Tools</span>
+                                <br>
+                                <p>Tidyverse, pandas, NumPy, scikit-Learn, matplotlib, ggplot2, PyTorch, NLP, Power BI, Quarto</p>
+                            </li>
+
+                            <li><span>Databases</span>
+                                <br>
+                                <p>SQL, Microsoft Excel, OracleS</p>
+                            </li>
+
+                            <li><span>Automation and Containerization</span>
+                                <br>
+                                <p>Docker, GitHub Actions, Continuous Integration (CI), Continuous Deployment (CD)</p>
+                            </li>
+
+                            <li><span>Other Tools</span>
+                                <br>
+                                <p>Docker, Git, GitHub GitHub Actions, Continuous Integration (CI), Continuous Deployment (CD)</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul class = "list-items">
+                            <li><span><h1></h1>Bachelor of Science, Major in Statisitcs and Minor in Data Science <br>
+                            <h4><i>University of British Columbia</i></h4></span>
+                                <br>
+                                <p>Relevant Courses: Applied Machine Learning, Reproducible and Trustworthy Workflows for Data Science, 
+                                    Finding Relations in Data, Statistical Modelling for Data Science, 
+                                    Introductory Data Science, Statistical Application, Statistical Inference, 
+                                    Relational Databases, Software Construction, Object-Oriented Programming, 
+                                    Data Structures and Algorithms.
+                                </p>
+                                <span>
+                                   September 2020 - Present
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="eca">
+                        <ul class = "list-items">
+                            <li><span>Volunteer <br>
+                            <h4><i>UNICEF, Bangladesh</i></h4></span>
+                                <br>
+                                <p>Led fundraising activities for ensuring clean water and vaccinations for Rohingya children in Cox's Bazar.
+                                    Coordinated relief operations and set up vaccine camps, 
+                                    improving health and safety for vulnerable populations.</p>
+                                <span>
+                                    May 2017 - June 2021
+                                </span>
+                            </li>
+                        </ul>
+
+                        <ul class = "list-items">
+                            <li><span>Director of Resource Management and Risk Analysis<br>
+                            <h4><i>Notre Dame College MUN </i></h4></span>
+                                <br>
+                                <p>
+                                    Managed budgets and collaborated with departments to optimize fund allocation. 
+                                    Ensured efficient resource distribution and enhanced the organization's 
+                                    financial sustainability for successful project execution.
+                                </p>
+                                <span>
+                                    July 2018 - June 2019
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
                 </div>
             </div>
-
         </div>
     </div>
 
     
+<script>
 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 
 
 
