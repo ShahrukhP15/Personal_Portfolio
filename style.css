@@ -139,7 +139,7 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.social-icons {
+/* .social-icons {
     display: flex; 
     justify-content: center; 
     margin-top: 20px; 
@@ -171,7 +171,7 @@ nav ul li a:hover::after{
 .social-icons a:hover::after {
     width: 100%;
     left: 0; 
-}
+} */
 
 .tab-titles{
     display: flex; ; 
@@ -219,7 +219,8 @@ nav ul li a:hover::after{
     font-size: 14px;
 }
 
-h4 {
+.tab-contents h4 {
+    margin-top: -10px;
     margin-bottom: -20px;
 }
 
@@ -231,7 +232,96 @@ h4 {
     display: block;
 }
 
+/* -----------------experience------------------- */
+
+#experience{
+    padding: 30px 0;
+    color: aliceblue;
+}
+
+.exp-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    /* text-align: justify */
+}
+
+.exp-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition:transform 0.5s, background 0.5s;
+}
+
+ .exp-list div h2{
+    font-size: 25px;
+    font-weight: 500;
+}
 
 
+.exp-list div h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
 
+.exp-list div h4{
+    font-weight: 500;
+}
+
+.exp-list div:hover{
+    background: #308a8a;
+    transform: translateY(-10px);
+}
+
+
+/* -----------------Experience Icons------------------- */
+.ep--data-analysis {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23000' d='m665.216 768l110.848 192h-73.856L591.36 768H433.024L322.176 960H248.32l110.848-192H160a32 32 0 0 1-32-32V192H64a32 32 0 0 1 0-64h896a32 32 0 1 1 0 64h-64v544a32 32 0 0 1-32 32zM832 192H192v512h640zM352 448a32 32 0 0 1 32 32v64a32 32 0 0 1-64 0v-64a32 32 0 0 1 32-32m160-64a32 32 0 0 1 32 32v128a32 32 0 0 1-64 0V416a32 32 0 0 1 32-32m160-64a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V352a32 32 0 0 1 32-32'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-bottom: 25px;
+  }
+
+  .hugeicons--chart-line-data-02 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' color='%23000'%3E%3Ccircle cx='8.5' cy='10.5' r='1.5'/%3E%3Ccircle cx='14.5' cy='15.5' r='1.5'/%3E%3Ccircle cx='18.5' cy='7.5' r='1.5'/%3E%3Cpath d='M15.434 14.296L18 9m-8.417 2.568l3.62 2.728M3 19l4.59-7.12M20 21H9c-3.3 0-4.95 0-5.975-1.025S2 17.3 2 14V3'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-bottom: 25px;
+  }
+
+  .mdi--teacher {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20 17a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H9.46c.35.61.54 1.3.54 2h10v11h-9v2m4-10v2H9v13H7v-6H5v6H3v-8H1.5V9a2 2 0 0 1 2-2zM8 4a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-bottom: 25px;
+  }
+  /* -----------------Experience Icons End------------------- */
 
