@@ -26,13 +26,26 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Experience</a></li>
-                        <li><a href="#">Resume</a></li>
                         <li><a href="#">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        
                  </ul>
             </nav>
             <div class="header-text">
                 <p>Statistician, Data Scientist, ML Engineer</p>
-                <h1>Hi, I'm <span>Shahrukh</span>,<br> an aspiring Data Scientist.<br> </h1>
+                <h1>Hi, I'm <span>Shahrukh</span>,<br> an aspiring Data Scientist &<br>
+                ML Engineer </h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shahrukh-islam-prithibi-597833291/" target="_blank">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="mailto:s.prithibi15@gmail.com">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                        <a href="https://github.com/ShahrukhP15?tab=repositories" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
             </div>
         </div>
     </div>
@@ -51,26 +64,10 @@
                     I have recently wokred as a Payment Review and Compliance Analyst at WorkSafeBC. 
                     In my spare time I like to travel, play games and watch FRIENDS or The Office. 
                      </p>
-                    <!-- <br>
-                    <br>
-                    <h4 class="title-2">Feel Free to Reach Out!</h4>
-                    <p class="sub_info">If you would like to get in touch, connect with me on social media or send me an email.</p>
-
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/shahrukh-islam-prithibi-597833291/" target="_blank">
-                            <i class="ri-linkedin-box-fill"></i>
-                        </a>
-                        <a href="mailto:s.prithibi15@gmail.com">
-                            <i class="ri-mail-fill"></i>
-                        </a>
-                        <a href="https://github.com/ShahrukhP15?tab=repositories" target="_blank">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                    </div> -->
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Education</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('eca')">Extracurricular Activities</p>
                     </div>
 
@@ -103,9 +100,9 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="education">
                         <ul class = "list-items">
-                            <li><span><h1></h1>Bachelor of Science, Major in Statisitcs and Minor in Data Science <br>
+                            <li><span>Bachelor of Science, Major in Statisitcs and Minor in Data Science <br>
                             <h4><i>University of British Columbia</i></h4></span>
                                 <br>
                                 <p>Relevant Courses: Applied Machine Learning, Reproducible and Trustworthy Workflows for Data Science, 
@@ -160,23 +157,41 @@
     <!-- -------------Experience---------------- -->
 
     <div id="experience">
-        <!-- <input type="checkbox" id="check1">
+        <input type="checkbox" id="check1">
         <input type="checkbox" id="check2">
-        <input type="checkbox" id="check3"> -->
+        <input type="checkbox" id="check3">
         <div class="container">
             <h1 class="title"> Experience</h1>
             <div class="exp-list">
-                <div>
+                <div class="single-experience-container">
                     <span class="ep--data-analysis"></span>
                     <h2>Payment Review Analyst</h2>
                     <h3><i>WorkSafeBC</i></h3>
-                    <p class="justify-text">Conducted data analysis to identify and prevent fraudulent activities. 
+                    <p>Conducted data analysis to identify and prevent fraudulent activities. 
                         Developed and implemented data-driven strategies to improve payment review processes. 
                         Collaborated with cross-functional teams to enhance compliance and reduce financial risks.</p>
                         <h4>May 2024 - December 2024</h4>
+                    <label for="check1" class="bar bar1">
+                            <span class="ri-arrow-down-s-line down1"></span>
+                            <span class="ri-arrow-up-s-line up1"></span>   
+                    </label>
+                    <div class="exp-details d1">
+                        <ul>
+                            <li>Executed in-depth analysis with <b>PowerBI</b> and <b><span>SQL</span></b>, revealing trends in practitioner behavior 
+                                and identifying <b>25%</b> of providers exceeded billing limits,
+                                uncovering <b>$240K</b> in overcharges and which supported contract revisions.</li>
+                            <li>Developed an automation process with <b>Microsoft Power Automate</b> and <b>T-SQL</b>,
+                                 streamlining the detection of anomalies in surgery authentications and payments,
+                                 increasing operational efficiency by <b>60%</b> and reducing surgery delays.</li>
+                            <li>Reviewed and analyzed payment security reports, identifying errors and potential fraud through
+                                 advanced analytical techniques,
+                                 contributing to effective fraud detection and overpayment prevention strategies.</li>
+                        </ul>
+                    </div>  
+                        
                 </div>
 
-                <div>
+                <div class="single-experience-container">
                     <span class="hugeicons--chart-line-data-02"></span>
                     <h2>Junior Data Analyst</h2>
                     <h3><i>Mousumi Offset Press</i></h3>
@@ -185,9 +200,27 @@
                         and contributed to data-driven strategies that increased contract wins 
                         and profitability.</p>
                         <h4>September 2020 - July 2022</h4>
+                    <label for="check2" class="bar bar2">
+                            <span class="ri-arrow-down-s-line down2"></span>
+                            <span class="ri-arrow-up-s-line up2"></span>   
+                    </label>
+                    <div class="exp-details d2">
+                        <ul>
+                            <li> Collaborated with the business analyst team to calculate tender rates using Excel, 
+                                integrating current market commodity prices and financial metrics, 
+                                improving pricing accuracy by <b>17%</b>, resulting in a <b>8%</b> increase in contract wins.</li>
+                            <li>Conducted historical competitor trend analysis using R, 
+                                analyzing past data and market conditions to assess potential risks, 
+                                which informed strategic pricing decisions and reduced financial exposure by approximately <b>20%</b>.</li>    
+                            <li>Effectively communicated data-driven strategies,
+                                 utilizing PowerPoint presentations, 
+                                 helping the company secure major contracts and enhance profitability 
+                                 by showcasing insights that aligned with business goals. </li>
+                        </ul>
+                    </div>     
                 </div>
 
-                <div>
+                <div class="single-experience-container">
                     <span class="mdi--teacher"></span>
                     <h2>IELTS Instructor</h2>
                     <h3><i>Hassle Free Education</i></h3>
@@ -195,8 +228,40 @@
                         IELTS scores. Applied effective communication techniques  to improve students' English proficiency,
                         contributing to strong exam results.</p>
                         <h4>January 2020 - September 2021</h4>
+                        <label for="check3" class="bar bar3">
+                            <span class="ri-arrow-down-s-line down3"></span>
+                            <span class="ri-arrow-up-s-line up3"></span>   
+                    </label>
+                    <div class="exp-details d3">
+                        <ul>
+                            <li> Cultivated a supportive and engaging classroom environment by creating
+                                 interactive lesson that encouraged active participation, 
+                                 helping to motivate students to excel in their IELTS exams
+                                 and boost their confidence in English language proficiency.</li>
+                            <li>Demonstrated exceptional interpersonal and communication skills, 
+                                building rapport with students from diverse backgrounds and guiding 
+                                them through personalized feedback and continuous support, which significantly 
+                                boosted their confidence and improved their exam performance by more than <b>25%</b>.</li>
+                            <li>Developed customized lesson plans tailored to the specific needs and 
+                                learning styles of individual students, focusing on improving core 
+                                areas, resulting in a <b>10% </b> increase in overall scores.</li>
+                        </ul>
+                    </div>
                 </div>
 
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------Projects------------------>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="title">Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -204,24 +269,7 @@
             
 
     
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+<script src="main.js"></script>
 
 
 

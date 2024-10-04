@@ -76,18 +76,59 @@ nav ul li a:hover::after{
 
 .header-text{
     font-size: 20px;
-    margin-top: 20%;
+    margin-top: 18%;
+    
 }
 
 .header-text h1{
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .header-text h1 span{
     color: #4cd9d9;
 }
 
+
+.social-icons {
+    display: flex;  
+    margin-top: 20px; 
+    text-align: center; 
+    justify-content: left;
+}
+
+.social-icons a {
+    color: aliceblue;
+    font-size: 45px;
+    margin: 0 30px 0 -5px;
+    position: relative;
+    text-decoration: none; 
+    display: inline-flex; 
+    align-items: center;
+    transition: 0.5s ease; 
+}
+
+.social-icons a:hover {
+    color: #4cd9d9;
+    transform: translateY(-8px);
+}
+.social-icons a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(105, 244, 244, 0.9), rgba(105, 244, 244, 0.6));
+    position: absolute;
+    left: 50%; 
+    bottom: -6px; 
+    border-radius: 4px;
+    transition: width 0.5s, left 0.5s; 
+}
+
+.social-icons a:hover::after {
+    width: 100%;
+    left: 0; 
+    
+}
 /* -----------------about------------------- */
 #about{
     padding : 80px 0;
@@ -138,40 +179,6 @@ nav ul li a:hover::after{
 .sub_info{
     text-align: center;
 }
-
-/* .social-icons {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 20px; 
-    text-align: center; 
-}
-
-.social-icons a {
-    color: #4cd9d9;
-    font-size: 45px;
-    margin: 0 15px;
-    position: relative;
-    text-decoration: none; 
-    display: inline-flex; 
-    align-items: center; 
-}
-
-.social-icons a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, rgba(105, 244, 244, 0.9), rgba(105, 244, 244, 0.6));
-    position: absolute;
-    left: 50%; 
-    bottom: -6px; 
-    border-radius: 4px;
-    transition: width 0.5s, left 0.5s; 
-}
-
-.social-icons a:hover::after {
-    width: 100%;
-    left: 0; 
-} */
 
 .tab-titles{
     display: flex; ; 
@@ -249,6 +256,7 @@ nav ul li a:hover::after{
 
 .exp-list div{
     background: #262626;
+    position: relative;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -272,10 +280,112 @@ nav ul li a:hover::after{
     font-weight: 500;
 }
 
-.exp-list div:hover{
+.exp-list>div:hover,
+.exp-details > div:hover{
     background: #308a8a;
     transform: translateY(-10px);
 }
+
+
+
+.down1, .down2, .down3 {
+    font-size: 28px; 
+    margin: 20px 10px; 
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.bar1, .bar2, .bar3 {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+.bar:hover .down1,
+.bar:hover .down2, 
+.bar:hover .down3{
+    transform: scale(1.3) translateY(-5px); /* Scale up and move up */
+    color: #262626;
+}
+
+.up1, .up2, .up3 {
+    font-size: 28px; 
+    margin: 20px 10px; 
+    display: none;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.bar:hover .up1, 
+.bar:hover .up2,
+.bar:hover .up3{
+    transform: scale(1.3) translateY(-5px); /* Scale up and move up */
+    
+}
+
+.single-experience-container{
+    height: fit-content;
+}
+
+.exp-list .exp-details {
+    height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflow */
+    background: inherit; /* Set background color */
+    padding: 0 10px 0 15px; /* Padding only on the sides */
+    font-size: 15px;
+    font-weight: 350;
+    border-radius: 5px;
+    margin: auto;
+    top: -40px;
+    transition: height .90s ease; /* Transition for max-height and padding */
+}
+
+.exp-list li {
+    margin-bottom: 10px; /* Adjust margin as needed for spacing */
+}
+
+.exp-details.active {
+    
+    padding-top: 30px; /* Add padding when expanded */
+    top: -25px;
+
+}
+
+input[type="checkbox"] {
+    display: none; /* Hide the checkbox */
+}
+
+
+
+#check1:checked ~ .container .bar1 .down1 {
+    display: none;
+}
+
+#check1:checked ~ .container .bar1 .up1 {
+    display: inline-block;
+}
+
+#check2:checked ~ .container .bar2 .down2 {
+    display: none;
+}
+
+#check2:checked ~ .container .bar2 .up2 {
+    display: inline-block;
+}
+
+#check3:checked ~ .container .bar3 .down3 {
+    display: none;
+}
+
+#check3:checked ~ .container .bar3 .up3 {
+    display: inline-block;
+}
+
+
+
 
 
 /* -----------------Experience Icons------------------- */
@@ -324,4 +434,12 @@ nav ul li a:hover::after{
     margin-bottom: 25px;
   }
   /* -----------------Experience Icons End------------------- */
+
+  /* -----------------Projects-------------------  */
+
+  #projects{
+    padding: 50px 0;
+    color: aliceblue;
+}
+
 
