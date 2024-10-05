@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Credit Risk Project - Detailed Description</title>
+    <!-- Link the same CSS file -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../details-style.css">
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="credit-risk-page">
+
+    <!-- Header and Navigation (reuse the same from your index.html) -->
+    <section id="header">
+        <div class="container">
+            <nav>
+                <img src="../images/logo2.png" class="logo">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-image-container">
+                <img src="../images/credit.jpeg" alt="Credit Risk Analysis" class="header-image">
+                <div class="overlay"></div>
+            </div>
+            <div class="header-text">
+                <h1>Enhancing Credit Risk Classification with Machine Learning</h1>
+            </div>
+
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> > 
+                <a href="../index.html#projects">Projects</a> > 
+                Credit Risk Analysis
+            </div>
+
+            <div class="button-container">
+                <!-- GitHub Button -->
+                <button class="btn" onclick="window.open('https://github.com/ShahrukhP15/Credit-Risk-Classification', '_blank')">
+                    <i class="fa fa-github"></i> GitHub Repo
+                </button>
+
+                <button class="btn" onclick="window.open('https://pycredits-dsci310.readthedocs.io/en/latest/', '_blank')">
+                    <span class="akar-icons--python-fill"></span> Python Package
+                </button>
+            
+                <!-- Report Button -->
+                <button class="btn" onclick="window.open('https://dsci-310-2024.github.io/DSCI310_Group-12_Credit-Risk-Classification/', '_blank')">
+                    <i class="fa fa-link"></i> Report
+                </button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Main Project Description Content -->
+    <div id="description">
+        <div class="info-container">
+            <div class="info-box">
+                <!-- <h2>Fourier Series Approximation</h2> -->
+                <p>This project aims to develop a predictive model to classify individuals as good or bad 
+                    credit risks using the Statlog (German Credit Data) dataset. 
+                    By leveraging attributes such as credit history, duration of credit, 
+                    and residence. 
+                    The main objectives of this project was to create a reproducible and 
+                    trustworthy data flow and to establish a consistent predictive model. </p>
+            </div>
+            <div class="info">
+                <div class="info-text">
+                    <p>In the financial sector, accurately assessing credit risk is crucial 
+                        for lending decisions. The Statlog (German Credit Data) dataset provides
+                        a comprehensive set of attributes that can help in classifying 
+                        individuals as good or bad credit risks.<br> We utilized the data to develop a predictive
+                        model that classifies credit risks effectively, focusing on ensuring 
+                        reproducibility and trustworthiness in the data flow. 
+                        We analyzed key attributes such as credit history, duration of credit, 
+                        and residence. Various modeling techniques were implemented, 
+                        with a primary focus on <b>Logistic Regression</b> and <b>Random Forest</b> models.
+                        Throughout the process, we emphasized in creating a structured data flow 
+                        to ensure that the model could be consistently reproduced and validated.
+                        
+                        <br>As a result of our efforts, we successfully developed a 
+                        predictive model that fairly accurately classifies credit risks while maintaining a 
+                        reproducible and trustworthy data flow, providing valuable 
+                        insights for financial institutions in their lending practices.
+                    </p>
+                
+                    <div class="tools">
+                        <h2>Tools Used</h2>
+                        <ul>
+                            <li><b>Python, scikit-learn, pandas, NumPy</b> for data analysis and model training</li>
+                            <li><b>Docker, Conda</b> for ensuring reproducibility</li>
+                            <li><b>Quartoe</b> for creating dynamic reports</li>
+                            <li><b>GNU Make</b> for automation and efficiency</li>
+                            <li><b>GitHub Actions</b> for CI/CD 
+                            <li><b>pytest</b> for testing to ensure functionality and reliability</li> 
+                            <li><b>PyPI</b> for packing project and increasing reproducibility</li>
+                        </ul>
+                    </div>
+
+                    <div class = "tools">
+                        <h2>Analysis Summary</h2>
+                        <p>
+                            Initially, a dummy model served as a baseline, followed by logistic regression to interpret the influence of individual features on credit risk. 
+                            To address logistic regression's limitations in capturing complex, 
+                            non-linear relationships, a random forest model was introduced, 
+                            enhancing predictive performance through multiple decision trees. 
+                            The dataset was split 80-20 for training and testing, with categorical 
+                            variables one-hot encoded and continuous variables standardized. 
+                            Key evaluation metrics—precision, recall, accuracy, and F1 score—were 
+                            selected to mitigate the real-world consequences of false positives and 
+                            negatives, ensuring both statistical robustness and fairness in credit 
+                            risk assessment.Our best-performing model is a <b>Random Forest</b> model
+                             which gave us a test score of <b>0.754</b> 
+                            on unseen data, a decent result compared to the dummy model's score of 
+                            <b>0.699</b>.    
+                        </p>
+                    </div>
+
+
+                </div>             
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

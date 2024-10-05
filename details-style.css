@@ -1,0 +1,172 @@
+#header {
+    background-image: none; /* Remove the background image */
+    position: relative;
+    text-align: center; /* Center the text */
+    color: aliceblue; /* Text color */
+    overflow: visible; /* Hide overflow */
+}
+
+body{
+    background: #0D1117;
+}
+
+
+
+.header-image-container {
+    position: relative;
+    /* padding-top: 50px; */
+}
+
+.header-image {
+    position: absolute; /* Maintain absolute positioning */
+    top: 40px; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 250px; /* Full height to cover the section */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    object-position:  50% 85%;;
+    filter: blur(8px); /* Apply blur effect */
+    z-index: 1; /* Ensure the image is behind the overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+.header-content {
+    position: relative;
+    z-index: 3; /* Ensure content is above the overlay */
+    padding: 100px; /* Add some padding */
+}
+
+.header-text {
+    position: relative; /* Ensure the text is positioned correctly */
+    z-index: 3; /* Ensure content is above the overlay */
+    padding-top: 95px; /* Adjust this value to move it further down */
+    text-align: center; /* Center align the text */
+}
+
+.breadcrumb {
+    text-align: center; /* Center align the breadcrumb */
+    margin-top: 10px; /* Add margin to separate from header text */
+    z-index: 3; /* Ensure it is above the overlay */
+    color: #308a8a
+}
+
+.breadcrumb a {
+    color: #308a8a; /* Set the normal link color to grey */
+    text-decoration: none;
+}
+
+.breadcrumb a:visited {
+    color: #308a8a; /* Set the visited link color to grey */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Margin at the top */
+}
+
+.btn {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #4cd9d9; /* Blue outline */
+    color: #4cd9d9; /* Text color */
+    padding: 10px 14px; /* Button padding */
+    font-size: 15px; /* Button font size */
+    font-weight: 400;
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    display: flex; /* Flex for alignment */
+    align-items: center; /* Center vertically */
+    transition: background-color 0.3s, color 0.5s,transform 0.3s, transform 0.3s;
+    
+}
+
+/* Change text color and background on mouse-over */
+.btn:hover {
+    background-color: #308a8a; /* Background color on hover */
+    color: #1D2330; /* Text color on hover */
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Space between icon and text */
+.btn i {
+    margin-right: 8px; /* Margin to the right of the icon */
+}
+
+/* ---------------- python logo ---------------- */
+.akar-icons--python-fill {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none'%3E%3Cg fill='%23000' clip-path='url(%23akarIconsPythonFill0)'%3E%3Cpath d='M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969s3.403 5.96 3.403 5.96h2.03v-2.867s-.109-3.42 3.35-3.42h5.766s3.24.052 3.24-3.148V3.202S18.28 0 11.913 0M8.708 1.85c.578 0 1.046.47 1.046 1.052c0 .581-.468 1.051-1.046 1.051s-1.046-.47-1.046-1.051c0-.582.467-1.052 1.046-1.052'/%3E%3Cpath d='M12.087 24c6.092 0 5.712-2.656 5.712-2.656l-.007-2.752h-5.814v-.826h8.123s3.9.445 3.9-5.735s-3.404-5.96-3.404-5.96h-2.03v2.867s.109 3.42-3.35 3.42H9.452s-3.24-.052-3.24 3.148v5.292S5.72 24 12.087 24m3.206-1.85c-.579 0-1.046-.47-1.046-1.052c0-.581.467-1.051 1.046-1.051c.578 0 1.046.47 1.046 1.051c0 .582-.468 1.052-1.046 1.052'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='akarIconsPythonFill0'%3E%3Cpath fill='%23fff' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-right: 8px;
+  }
+
+  #description {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Padding around the container */
+}
+
+.info-container {
+    width: 80%; /* Set container width to 80% of the screen */
+}
+
+.info-box {
+    background-color: #1D2330; /* Background color of the box */
+    border-left: 4px solid #4cd9d9; /* Left colored border */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-bottom: 20px; /* Space below the info box */
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.info{
+    font-size: 16px;
+    font-weight: 350;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.info-text {
+    width: 100%; /* Ensure it takes full width */
+}
+
+.tools {
+    margin-top: 10px; /* Adjust spacing between sections */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.tools h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 20px; /* Space below the heading */
+    color: #47CCCC
+}
+
+.tools li{
+    margin-left: 40px;
+}
+
+
