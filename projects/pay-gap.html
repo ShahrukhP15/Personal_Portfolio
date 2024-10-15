@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Credit Risk Project - Detailed Description</title>
+    <title>Pay Gap Prediction Project - Detailed Description</title>
     <!-- Link the same CSS file -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../details-style.css">
@@ -13,13 +13,14 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="credit-risk-page">
+
+<body id="pay-gap">
 
     <!-- Header and Navigation (reuse the same from your index.html) -->
     <section id="header">
         <div class="container">
-            <nav>
-                <img src="../images/logo4.png" class="logo">
+            <nav class="pay-gap-nav">
+                <img src="../images/logo-pay-gap.png" class="logo">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../index.html#about">About</a></li>
@@ -30,44 +31,37 @@
             </nav>
 
             <div class="header-image-container">
-                <img src="../images/credit.jpeg" alt="Credit Risk Analysis" class="header-image">
+                <img src="../images/pay-gap.jpeg" alt="Housing Pred Dashboard" class="header-image pay-gap-img">
                 <div class="overlay"></div>
             </div>
-            <div class="header-text">
-                <h1>Enhancing Credit Risk Classification with Machine Learning</h1>
+            <div class="header-text pay-gap-hdr-text">
+                <h1>Housing Price Prediction Model</h1>
             </div>
 
-            <div class="breadcrumb">
+            <div class="breadcrumb pay-gap-breadcrumb">
                 <a href="../index.html">Home</a> > 
-                <a href="../index.html#projects">Projects</a> > 
-                Credit Risk Analysis
+                <a href="../index.html#projects">Projects</a>> 
+                Sales Visualization Dashboard
             </div>
 
             <div class="button-container">
                 <!-- GitHub Button -->
-                <button class="btn" onclick="window.open('https://github.com/ShahrukhP15/Credit-Risk-Classification', '_blank')">
+                <button class="btn pay-gap-btn" onclick="window.open('https://github.com/ShahrukhP15/Airbnb-Popularity-Model', '_blank')">
                     <i class="fa fa-github"></i> GitHub Repo
-                </button>
-
-                <button class="btn" onclick="window.open('https://pycredits-dsci310.readthedocs.io/en/latest/', '_blank')">
-                    <span class="akar-icons--python-fill"></span> Python Package
                 </button>
             
                 <!-- Report Button -->
-                <button class="btn" onclick="window.open('https://dsci-310-2024.github.io/DSCI310_Group-12_Credit-Risk-Classification/', '_blank')">
+                <button class="btn pay-gap-btn" onclick="window.open('https://shahrukhp15.github.io/Airbnb-Popularity-Model/airbnb-model.html', '_blank')">
                     <i class="fa fa-link"></i> Report
                 </button>
             </div>
         </div>
-
-
-
     </section>
 
     <!-- Main Project Description Content -->
     <div id="description">
         <div class="info-container">
-            <div class="info-box">
+            <div class="info-box pay-gap-info-box">
                 <p>This project aims to develop a predictive model to classify individuals as good or bad 
                     credit risks using the Statlog (German Credit Data) dataset. 
                     By leveraging attributes such as credit history, duration of credit, 
@@ -95,7 +89,7 @@
                         insights for financial institutions in their lending practices.
                     </p>
                 
-                    <div class="tools">
+                    <div class="tools pay-gap-tools">
                         <h2>Tools Used</h2>
                         <ul>
                             <li><b>Python, scikit-learn, pandas, NumPy</b> for data analysis and model training</li>
@@ -108,7 +102,7 @@
                         </ul>
                     </div>
 
-                    <div class = "tools">
+                    <div class = "tools pay-gap-tools">
                         <h2>Analysis Summary</h2>
                         <p>
                             Initially, a dummy model served as a baseline, followed by logistic regression to interpret the influence of individual features on credit risk. 
@@ -132,6 +126,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../projects/project.js" defer></script>
 
 </body>
 </html>

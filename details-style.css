@@ -2,7 +2,7 @@
     background-image: none; /* Remove the background image */
     position: relative;
     text-align: center; /* Center the text */
-    color: aliceblue; /* Text color */
+    color: rgb(207, 229, 249); /* Text color */
     overflow: visible; /* Hide overflow */
 }
 
@@ -10,11 +10,13 @@ body{
     background: #0D1117;
 }
 
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
 
 
 .header-image-container {
     position: relative;
-    /* padding-top: 50px; */
 }
 
 .header-image {
@@ -92,7 +94,7 @@ body{
 
 /* Change text color and background on mouse-over */
 .btn:hover {
-    background-color: #308a8a; /* Background color on hover */
+    background-color: #49cfcf; /* Background color on hover */
     color: #1D2330; /* Text color on hover */
     transform: translateY(-5px) scale(1.05);
 }
@@ -118,7 +120,7 @@ body{
     margin-right: 8px;
   }
 
-  #description {
+#description {
     display: flex; /* Flexbox layout */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -169,4 +171,302 @@ body{
     margin-left: 40px;
 }
 
+
+/* ---------------------------- Sales Dashboard ---------------------------- */
+
+.sales-hd-text h1{
+    color: rgb(229, 241, 239);
+}
+#sales-dashboard {
+    background: #0d1812;
+}
+.sales-nav ul li a::after{
+    background: linear-gradient(90deg,rgba(56, 237, 196, 1), rgba(56, 237, 196, 0.7));
+}
+
+.sales-img{
+    object-position: 50% 50%;
+}
+
+.sales-breadcrumb {
+    color: #218C74; /* Text color */
+}
+
+.sales-breadcrumb a {
+    color: #218C74; /* Set the normal link color to grey */
+    text-decoration: none;
+}
+
+.sales-breadcrumb a:visited {
+    color: #218C74; /* Set the visited link color to grey */
+}
+
+.sales-btn{
+    border: 2px solid #218C74;
+    color: #34b095;
+}
+
+.sales-btn:hover {
+    background-color: #34b095; /* Background color on hover */
+    color: #0A130E; 
+}
+
+.sales-info-box {
+    background-color: #1F2B25; /* Background color of the box */
+    border-left: 4px solid #30caa8; /* Left colored border */
+}
+
+.sales-tools h2 {
+    color: #4ad8b9;
+}
+
+/* ---------------------------- abnb Dashboard ---------------------------- */
+
+#abnb-model {
+    background: #1F0708;
+}
+
+.airbnb-hdr-text h1{
+    color: rgb(251, 236, 236);
+}
+
+.airbnb-nav ul li a::after{
+    background:linear-gradient(90deg, rgb(255, 58, 62), rgba(231, 76, 94, 0.7));
+}
+
+.abnb-img{
+    filter: blur(6px);  
+    object-position: 50% 40%;
+}
+
+.abnb-breadcrumb {
+    color: #BD3E4D; /* Text color */
+}
+
+.abnb-breadcrumb a {
+    color: #BD3E4D; /* Set the normal link color to grey */
+    text-decoration: none;
+}
+
+.abnb-breadcrumb a:visited {
+    color: #BD3E4D; /* Set the visited link color to grey */
+}
+
+.abnb-btn{
+    border: 2px solid #b84a57;
+    color: #E74C5E;
+}
+
+.abnb-btn:hover {
+    background-color: #B03A48; /* Background color on hover */
+    color: #140A03; 
+}
+
+.abnb-info-box {
+    background-color: #2e1e23; /* Background color of the box */
+    border-left: 4px solid #E74C5E; /* Left colored border */
+}
+
+.abnb-tools h2 {
+    color: #c94857;
+}
+
+
+/* ---------------------------- Event Management ---------------------------- */
+
+#evm {
+    background: #0D0E1C;
+}
+
+.evm-hdr-text h1{
+    color: #e5e6f3;
+}
+
+.evm-nav ul li a::after{
+    background:linear-gradient(90deg, rgba(184, 195, 240, 1), rgba(184, 195, 240, 0.8));
+}
+
+.evm-img{
+    filter: blur(8px);  
+    object-position: 50% 40%;
+}
+
+.evm-breadcrumb {
+    color: #9199BD; /* Text color */
+}
+
+.evm-breadcrumb a {
+    color: #9199BD; /* Set the normal link color to grey */
+    text-decoration: none;
+}
+
+.evm-breadcrumb a:visited {
+    color: #9199BD; /* Set the visited link color to grey */
+}
+
+.evm-btn{
+    border: 2px solid #B8C3F0;
+    color: #B8C3F0;
+}
+
+.evm-btn:hover {
+    background-color: #a6afd5; /* Background color on hover */
+    color: #140A03; 
+}
+
+.evm-info-box {
+    background-color: #1f2439; /* Background color of the box */
+    border-left: 4px solid #B8C3F0; /* Left colored border */
+}
+
+.evm-tools h2 {
+    color: #8da1f1;
+}
+
+/* -------------Scroll Bar Style---------------- */
+
+#evm::-webkit-scrollbar {
+    width: 10px; 
+}
+
+#evm::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #2C2F5E); /* Scrollbar color */
+    border-radius: 3px; /* Rounded corners */
+}
+
+#evm::-webkit-scrollbar-thumb:hover {
+    background-color: #8da1f1; /* Hover color for scrollbar */
+}
+
+
+/* ----------------------------- Housing Prediction ---------------------------- */ 
+
+#housing {
+    background: #191A1F;
+}
+
+.housing-hdr-text h1{
+    color: #e1e3e9;
+}
+
+.housing-nav ul li a::after{
+    background:linear-gradient(90deg, rgba(178, 199, 199,1), rgba(130, 147, 147, 0.8));
+}
+
+.housing-img{
+    filter: blur(8px);  
+    object-position: 50% 50%;
+}
+
+.housing-breadcrumb {
+    color: #829393; /* Text color */
+}
+
+.housing-breadcrumb a {
+    color: #829393; /* Set the normal link color to grey */
+    text-decoration: none;
+}
+
+.housing-breadcrumb a:visited {
+    color: #829393; /* Set the visited link color to grey */
+}
+
+.housing-btn{
+    border: 2px solid #c8d3d8;
+    color: #dde1e3;
+}
+
+.housing-btn:hover {
+    background-color: #aab5b9; /* Background color on hover */
+    color: #140A03; 
+}
+
+.housing-info-box {
+    background-color: #2c353e; /* Background color of the box */
+    border-left: 4px solid #c8d3d8; /* Left colored border */
+}
+
+.housing-tools h2 {
+    color: #88A3A3;
+}
+
+/* -------------Scroll Bar Style---------------- */
+
+#housing::-webkit-scrollbar {
+    width: 10px; 
+}
+
+#housing::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #3A4652); /* Scrollbar color */
+    border-radius: 3px; /* Rounded corners */
+}
+
+#housing::-webkit-scrollbar-thumb:hover {
+    background-color: #829393; /* Hover color for scrollbar */
+}
+
+
+/* ----------------------------- Pay Gap Prediction ---------------------------- */
+
+#pay-gap {
+    background: #191D21;
+}
+
+#pay-gap::-webkit-scrollbar {
+    width: 10px; 
+}
+
+#pay-gap::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #51595F); /* Scrollbar color */
+    border-radius: 3px; /* Rounded corners */
+}
+
+#pay-gap::-webkit-scrollbar-thumb:hover {
+    background-color: #cc9baf; /* Hover color for scrollbar */
+}
+
+.pay-gap-hdr-text h1{
+    color: #fef9fe;
+}
+
+.pay-gap-nav ul li a::after{
+    background:linear-gradient(90deg, rgba(215, 162, 184,1), rgba(123, 93, 106, 0.8));
+}
+
+.pay-gap-img{
+    filter: blur(8px);  
+    object-position: 50% 60%;
+}
+
+.pay-gap-breadcrumb {
+    color: #AD8B9A; /* Text color */
+}
+
+.pay-gap-breadcrumb a {
+    color: #AD8B9A; /* Set the normal link color to grey */
+    text-decoration: none;
+}
+
+.pay-gap-breadcrumb a:visited {
+    color: #AD8B9A; /* Set the visited link color to grey */
+}
+
+.pay-gap-btn{
+    border: 2px solid #D9AEC0;
+    color: #D9AEC0;
+}
+
+.pay-gap-btn:hover {
+    background-color: #C49EAE; /* Background color on hover */
+    color: #140A03; 
+}
+
+.pay-gap-info-box {
+    background-color: #2f3437; /* Background color of the box */
+    border-left: 4px solid #d7a2b8; /* Left colored border */
+}
+
+.pay-gap-tools h2 {
+    color: #cc9baf;
+}
 

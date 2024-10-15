@@ -60,4 +60,34 @@ var tablinks = document.getElementsByClassName("tab-links");
         }
     });
 
+    window.addEventListener('scroll', () => {
+        // Calculate the scroll percentage
+        const scrollTop = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollPercent = (scrollTop / (documentHeight - windowHeight));
+    
+        // Define the start, middle, and end colors
+        const startColor = { r: 70, g: 69, b: 69 }; // #464545 (Start Color)
+        const midColor = { r: 61, g: 173, b: 173 };
+        const endColor = { r: 70, g: 69, b: 69 }; // #A8A3A3 (End Color)
+    
+        let r, g, b;
+        if (scrollPercent < 0.5) {
+            // Interpolate between startColor and redColor
+            const midScrollPercent = scrollPercent * 2; // Normalize to [0, 1]
+            r = Math.round(startColor.r + (midColor.r - startColor.r) * midScrollPercent);
+            g = Math.round(startColor.g + (midColor.g - startColor.g) * midScrollPercent);
+            b = Math.round(startColor.b + (midColor.b - startColor.b) * midScrollPercent);
+        } else {
+            // Interpolate between redColor and endColor
+            const midScrollPercent = (scrollPercent - 0.5) * 2; // Normalize to [0, 1]
+            r = Math.round(midColor.r + (endColor.r - midColor.r) * midScrollPercent);
+            g = Math.round(midColor.g + (endColor.g - midColor.g) * midScrollPercent);
+            b = Math.round(midColor.b + (endColor.b - midColor.b) * midScrollPercent);
+        }
+    
+        // Set the scrollbar color based on the scroll percentage
+        document.documentElement.style.setProperty('--scrollbar-thumb-color', `rgb(${r}, ${g}, ${b})`);
+    });
     
