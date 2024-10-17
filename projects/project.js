@@ -20,10 +20,16 @@ function applyScrollbarColorOnScroll() {
         } else if (pageName === 'evm.html') {
             startColor = { r: 44, g: 47, b: 94}; // Example start color for EVM
             endColor = { r: 141, g: 161, b: 241 }; // Example end color for EVM
+        } else if (pageName === 'airbnb-model.html') {
+            startColor = { r: 74, g: 17, b: 19}; // Example start color for Airbnb Model
+            endColor = { r: 201, g: 72, b: 87 }; // Example end color for Airbnb Model
+        } else if (pageName === 'sales-dashboard.html') {
+            startColor = { r: 35, g: 64, b: 48}; // Example start color for Sales Dashboard
+            endColor = { r: 33, g: 140, b: 116 }; // Example end color for Sales Dashboard
         } else {
             // Default colors for other pages
-            startColor = { r: 58, g: 70, b: 82 }; // Default start color
-            endColor = { r: 168, g: 163, b: 163 }; // Default end color
+            startColor = { r: 50, g: 64, b: 87 }; // Default start color
+            endColor = { r: 63, g: 181, b: 181 }; // Default end color
         }
 
         // Interpolate between the start and end colors

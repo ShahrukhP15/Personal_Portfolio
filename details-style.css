@@ -171,6 +171,54 @@ html {
     margin-left: 40px;
 }
 
+/* ------------------------------ Credit Risk ---------------------------- */
+
+/* -------------Scroll Bar Style---------------- */
+
+#credit-risk::-webkit-scrollbar {
+    width: 12px; 
+}
+
+#credit-risk::-webkit-scrollbar-track {
+    background-color: #19202B; /* Set the color for the scrollbar track */
+    /* border-radius: 3px; Optional: give it some rounded corners */
+}
+
+#credit-risk::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #324057); /* Scrollbar color */
+    border-radius: 2px; /* Rounded corners */
+}
+
+#credit-risk::-webkit-scrollbar-thumb:hover {
+    background-color: #3FB5B5; /* Hover color for scrollbar */
+}
+
+.footer-credit {
+    background: #131921;
+    border-top: 3px solid #1D2633;
+}
+
+.footer-credit .footer-links a {
+    color: #4A6082;
+}
+
+.divider-credit {
+    background: #1D2633;
+}
+
+.rr-credit {
+    color: #445978;
+}
+
+.footer-credit span {
+    color: #4A6082;
+}
+
+.footer-credit .github:hover {
+    color: #47CCCC;
+}
+
+
 
 /* ---------------------------- Sales Dashboard ---------------------------- */
 
@@ -217,6 +265,53 @@ html {
 }
 
 .sales-tools h2 {
+    color: #4ad8b9;
+}
+
+/* -------------Scroll Bar Style---------------- */
+
+#sales-dashboard::-webkit-scrollbar {
+    width: 12px; 
+}
+
+#sales-dashboard::-webkit-scrollbar-track {
+    background-color: #13241B; /* Set the color for the scrollbar track */
+    /* border-radius: 3px; Optional: give it some rounded corners */
+}
+
+#sales-dashboard::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #234030); /* Scrollbar color */
+    border-radius: 2px; /* Rounded corners */
+}
+
+#sales-dashboard::-webkit-scrollbar-thumb:hover {
+    background-color: #218C74; /* Hover color for scrollbar */
+}
+
+/* ---- Footer----  */
+
+.footer-sales {
+    background: #122119;
+    border-top: 3px solid #1C3326;
+}
+
+.footer-sales .footer-links a {
+    color: #3A6B50;
+}
+
+.divider-sales {
+    background: #1C3326;
+}
+
+.rr-sales {
+    color: #3A6B50;
+}
+
+.footer-sales span {
+    color: #3A6B50;
+}
+
+.footer-sales .github:hover {
     color: #4ad8b9;
 }
 
@@ -268,7 +363,28 @@ html {
 }
 
 .abnb-tools h2 {
-    color: #c94857;
+    color: #b84a57;
+}
+
+/* -------------Scroll Bar Style---------------- */
+
+#abnb-model::-webkit-scrollbar {
+    width: 12px; 
+}
+
+#abnb-model::-webkit-scrollbar-track {
+    background-color: #300B0D; /* Set the color for the scrollbar track */
+    /* border-radius: 3px; Optional: give it some rounded corners */
+}
+
+
+#abnb-model::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #4A1113); /* Scrollbar color */
+    border-radius: 2px; /* Rounded corners */
+}
+
+#abnb-model::-webkit-scrollbar-thumb:hover {
+    background-color: #C94857; /* Hover color for scrollbar */
 }
 
 
@@ -326,12 +442,17 @@ html {
 /* -------------Scroll Bar Style---------------- */
 
 #evm::-webkit-scrollbar {
-    width: 10px; 
+    width: 12px; 
+}
+
+#evm::-webkit-scrollbar-track {
+    background-color: #161830; /* Set the color for the scrollbar track */
+    /* border-radius: 3px; Optional: give it some rounded corners */
 }
 
 #evm::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb-color, #2C2F5E); /* Scrollbar color */
-    border-radius: 3px; /* Rounded corners */
+    background: var(--scrollbar-thumb-color, rgb(44, 47, 94)); /* Scrollbar color */
+    border-radius: 2px; /* Rounded corners */
 }
 
 #evm::-webkit-scrollbar-thumb:hover {
@@ -393,12 +514,17 @@ html {
 /* -------------Scroll Bar Style---------------- */
 
 #housing::-webkit-scrollbar {
-    width: 10px; 
+    width: 12px; 
+}
+
+#housing::-webkit-scrollbar-track {
+    background-color: #272930; /* Set the color for the scrollbar track */
+    /* border-radius: 3px; Optional: give it some rounded corners */
 }
 
 #housing::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb-color, #3A4652); /* Scrollbar color */
-    border-radius: 3px; /* Rounded corners */
+    border-radius: 2px; /* Rounded corners */
 }
 
 #housing::-webkit-scrollbar-thumb:hover {
@@ -413,12 +539,17 @@ html {
 }
 
 #pay-gap::-webkit-scrollbar {
-    width: 10px; 
+    width: 12px; 
+}
+
+#pay-gap::-webkit-scrollbar-track {
+    background-color: #272D33; /* Set the color for the scrollbar track */
+    /* border-radius: 3px; Optional: give it some rounded corners */
 }
 
 #pay-gap::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb-color, #51595F); /* Scrollbar color */
-    border-radius: 3px; /* Rounded corners */
+    border-radius: 2px; /* Rounded corners */
 }
 
 #pay-gap::-webkit-scrollbar-thumb:hover {

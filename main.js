@@ -68,9 +68,9 @@ var tablinks = document.getElementsByClassName("tab-links");
         const scrollPercent = (scrollTop / (documentHeight - windowHeight));
     
         // Define the start, middle, and end colors
-        const startColor = { r: 70, g: 69, b: 69 }; // #464545 (Start Color)
+        const startColor = { r: 127, g: 183, b: 190 }; // #464545 (Start Color)
         const midColor = { r: 61, g: 173, b: 173 };
-        const endColor = { r: 70, g: 69, b: 69 }; // #A8A3A3 (End Color)
+        const endColor = { r: 36, g: 123, b: 159 }; // #A8A3A3 (End Color)
     
         let r, g, b;
         if (scrollPercent < 0.5) {
