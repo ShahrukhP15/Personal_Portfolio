@@ -101,7 +101,8 @@ html {
 
 /* Space between icon and text */
 .btn i {
-    margin-right: 8px; /* Margin to the right of the icon */
+    margin-right: 8px;
+    font-size: 18px;
 }
 
 /* ---------------- python logo ---------------- */
@@ -291,7 +292,7 @@ html {
 /* ---- Footer----  */
 
 .footer-sales {
-    background: #122119;
+    background: #141C18;
     border-top: 3px solid #1C3326;
 }
 
