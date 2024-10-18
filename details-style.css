@@ -468,12 +468,12 @@ html {
 /* ---- Footer----  */
 
 .footer-evm {
-    background: #121326;
+    background: #111224;
     border-top: 3px solid #262952;
 }
 
 .footer-evm .footer-links a {
-    color: #4D52A6;
+    color: #494E9E;
 }
 
 .divider-evm {
@@ -481,15 +481,15 @@ html {
 }
 
 .rr-evm {
-    color: #4D52A6;
+    color: #494E9E;
 }
 
 .footer-evm span {
-    color: #4D52A6;
+    color: #494E9E;
 }
 
 .footer-evm .github:hover {
-    color: #8da1f1;
+    color: #8198f1;
 }
 
 /* -------------Scroll Bar Style---------------- */
