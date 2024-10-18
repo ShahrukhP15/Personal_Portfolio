@@ -90,4 +90,18 @@ var tablinks = document.getElementsByClassName("tab-links");
         // Set the scrollbar color based on the scroll percentage
         document.documentElement.style.setProperty('--scrollbar-thumb-color', `rgb(${r}, ${g}, ${b})`);
     });
+
+    function openRandomLink() {
+        // Define your two YouTube links
+        const links = [
+            "https://youtube.com/clip/Ugkxw9kTcDtmLCxJ_S9o4dDokmFCVQAh5wXV?si=KoF3MLJLmU36hByd",
+            "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        ];
+    
+        // Randomly pick one of the two links
+        const randomIndex = Math.floor(Math.random() * links.length);
+    
+        // Open the randomly selected link
+        window.open(links[randomIndex], '_blank');
+    };
     

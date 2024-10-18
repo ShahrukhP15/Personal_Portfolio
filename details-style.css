@@ -195,7 +195,7 @@ html {
 
 .footer-credit {
     background: #131921;
-    border-top: 3px solid #1D2633;
+    border-top: 3px solid #202A38;
 }
 
 .footer-credit .footer-links a {
@@ -203,7 +203,7 @@ html {
 }
 
 .divider-credit {
-    background: #1D2633;
+    background: #202A38;
 }
 
 .rr-credit {
@@ -387,6 +387,32 @@ html {
     background-color: #C94857; /* Hover color for scrollbar */
 }
 
+/* ---- Footer----  */
+
+.footer-abnb {
+    background: #2B0A0B;
+    border-top: 3px solid #4A1113;
+}
+
+.footer-abnb .footer-links a {
+    color: #8F2024;
+}
+
+.divider-abnb {
+    background: #4A1113;
+}
+
+.rr-abnb {
+    color: #8F2024;
+}
+
+.footer-abnb span {
+    color: #8F2024;
+}
+
+.footer-abnb .github:hover {
+    color: #E74C5E;
+}
 
 /* ---------------------------- Event Management ---------------------------- */
 
@@ -436,6 +462,33 @@ html {
 }
 
 .evm-tools h2 {
+    color: #8da1f1;
+}
+
+/* ---- Footer----  */
+
+.footer-evm {
+    background: #121326;
+    border-top: 3px solid #262952;
+}
+
+.footer-evm .footer-links a {
+    color: #4D52A6;
+}
+
+.divider-evm {
+    background: #262952;
+}
+
+.rr-evm {
+    color: #4D52A6;
+}
+
+.footer-evm span {
+    color: #4D52A6;
+}
+
+.footer-evm .github:hover {
     color: #8da1f1;
 }
 
@@ -511,6 +564,33 @@ html {
     color: #88A3A3;
 }
 
+/* ---- Footer----  */
+
+.footer-housing {
+    background: #1F2026;
+    border-top: 3px solid #31333D;
+}
+
+.footer-housing .footer-links a {
+    color: #63667A;
+}
+
+.divider-housing {
+    background: #31333D;
+}
+
+.rr-housing {
+    color: #63667A;
+}
+
+.footer-housing span {
+    color: #63667A;
+}
+
+.footer-housing .github:hover {
+    color: #ade6e6;
+}
+
 /* -------------Scroll Bar Style---------------- */
 
 #housing::-webkit-scrollbar {
@@ -536,24 +616,6 @@ html {
 
 #pay-gap {
     background: #191D21;
-}
-
-#pay-gap::-webkit-scrollbar {
-    width: 12px; 
-}
-
-#pay-gap::-webkit-scrollbar-track {
-    background-color: #272D33; /* Set the color for the scrollbar track */
-    /* border-radius: 3px; Optional: give it some rounded corners */
-}
-
-#pay-gap::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb-color, #51595F); /* Scrollbar color */
-    border-radius: 2px; /* Rounded corners */
-}
-
-#pay-gap::-webkit-scrollbar-thumb:hover {
-    background-color: #cc9baf; /* Hover color for scrollbar */
 }
 
 .pay-gap-hdr-text h1{
@@ -599,5 +661,51 @@ html {
 
 .pay-gap-tools h2 {
     color: #cc9baf;
+}
+
+/* ---- Footer----  */
+
+.footer-pay-gap {
+    background: #1D2226;
+    border-top: 3px solid #303840;
+}
+
+.footer-pay-gap .footer-links a {
+    color: #5D6E7D;
+}
+
+.divider-pay-gap {
+    background: #303840;
+}
+
+.rr-pay-gap {
+    color: #5D6E7D;
+}
+
+.footer-pay-gap span {
+    color: #5D6E7D;
+}
+
+.footer-pay-gap .github:hover {
+    color: #e9acc6;
+}
+
+/* <-!----------------------------- Scroll Bar Style ---------------------------- --> */
+#pay-gap::-webkit-scrollbar {
+    width: 12px; 
+}
+
+#pay-gap::-webkit-scrollbar-track {
+    background-color: #272D33; /* Set the color for the scrollbar track */
+    /* border-radius: 3px; Optional: give it some rounded corners */
+}
+
+#pay-gap::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #51595F); /* Scrollbar color */
+    border-radius: 2px; /* Rounded corners */
+}
+
+#pay-gap::-webkit-scrollbar-thumb:hover {
+    background-color: #cc9baf; /* Hover color for scrollbar */
 }
 
